@@ -1,0 +1,11 @@
+   <div *ngFor="let food of foods" class="food-item">
+          <img [src]="food.image" alt="{{ food.name }}" class="food-image">
+          <div class="food-details">
+            <h3>{{ food.name }}</h3>
+            <mat-card-subtitle class="food-rating">food-rating - 4.0
+              <img mat-card-image src="../../assets/HeaderImage/rating.png" alt="" height="30px" width="40px"/>
+          </mat-card-subtitle>
+            <button mat-button color="primary"  color="primary"  matTooltip="Book The restaurant"  routerLink="/cart"  (click)="orderNow()">Order Now</button>
+          </div>
+        </div>
+      

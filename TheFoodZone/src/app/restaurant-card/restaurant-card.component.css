@@ -1,0 +1,29 @@
+ .restaurant-item{
+  width: 300px;
+  margin: 30px;
+  height: 410px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: lightpink;
+
+  
+}
+
+
+button{
+  display: table-cell;
+  max-width: 600px;
+  margin-left: 80px;
+  border: 2px solid purple;
+}
+
+.restaurant-image{
+  width: 260px;
+  height: 300px;
+  margin: 20px;
+  
+}
+.restaurant-rating{
+color: black;
+}

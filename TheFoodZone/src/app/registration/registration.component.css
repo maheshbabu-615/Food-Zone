@@ -1,0 +1,90 @@
+  .page{
+ 
+  font-family: cursive;
+  
+  color: red;
+  font-weight:bolder;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  border-radius: 50px;
+  border-color: white;
+  margin-bottom: 55px;
+  width: 40%;
+  height: 60%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+              box-shadow: 0 0 5px aqua,
+              0 0 15px rgb(100, 164, 164),
+              0 0 50px rgb(100, 156, 156);
+  margin-left: 30%
+}
+
+  
+  
+  mat-form-field{
+   
+     width: 300px;
+     height: 85px;
+   }   
+
+   .registration-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  #err{
+    color:red
+  }
+  ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex .mat-form-field-infix {
+    background-color: #25d8f0;
+  }
+  
+  .example-form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+ 
+  
+  
+  
+  

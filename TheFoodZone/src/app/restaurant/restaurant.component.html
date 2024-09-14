@@ -1,0 +1,12 @@
+<div *ngIf="loggedIn">
+    <div *ngFor="let restaurant of restaurants" class="restaurant-item">
+          <img [src]="restaurant.image" alt="{{ restaurant.name }}" class="restaurant-image">
+          <div class="restaurant-details">
+            <h3>{{ restaurant.name }}</h3>
+            <mat-card-subtitle class="restaurant-rating">Restaurant-rating - 4.5
+              <img mat-card-image src="../../assets/HeaderImage/rating.png" alt="" height="30px" width="40px"/>
+          </mat-card-subtitle>
+          <button mat-button color="primary"  color="primary"  matTooltip="Book The restaurant"  routerLink="/food-card" (click)="orderNow()">Order Now</button>
+          </div>
+        </div>
+      </div>

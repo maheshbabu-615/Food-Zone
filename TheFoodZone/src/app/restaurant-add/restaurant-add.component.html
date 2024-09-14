@@ -1,0 +1,47 @@
+<section>
+
+    <div id="formAddRestaurant">
+       <div id="formBx">
+       
+          <h2 style="color: whitesmoke;">Add new restaurant..</h2>
+       
+        
+          <form [formGroup]="addform">
+          <mat-form-field appearance="fill"><input matInput type="text" name="restaurantId"
+             placeholder="Enter Restaurant Id" formControlName="restaurantId" required
+            ></mat-form-field>
+          <br>
+          <mat-form-field appearance="fill"><input matInput type="text" name="restaurantName"
+             placeholder="Enter Restaurant Name" formControlName="restaurantName" required></mat-form-field>
+          <br>
+          <mat-form-field appearance="fill"><input matInput type="text" name="location"
+            placeholder="Enter location" formControlName="location" required></mat-form-field>
+         <br>
+         <mat-form-field appearance="fill"><input matInput type="text" name="cuisine"
+            placeholder="Enter cuisine" formControlName="cuisine" required></mat-form-field>
+         <br>
+         <mat-form-field appearance="fill"><input matInput type="text" name="image"
+            placeholder="Enter image" formControlName="image" required></mat-form-field>
+         <br>
+         <mat-form-field appearance="fill"><input matInput type="text" name="rating"
+            placeholder="Enter rating" formControlName="rating" required></mat-form-field>
+         <br>
+         <h2 style="color: whitesmoke;">Address</h2>
+         <mat-form-field appearance="fill"><input matInput type="text" name="area"
+            placeholder="Enter area" formControlName="area" required></mat-form-field>
+         <br>
+         <mat-form-field appearance="fill"><input matInput type="text" name="state"
+            placeholder="Enter state" formControlName="state" required></mat-form-field>
+         <br>
+         <mat-form-field appearance="fill"><input matInput type="text" name="zipcode"
+            placeholder="Enter zipcode" formControlName="zipcode" required></mat-form-field>
+         <br>
+          <button type="submit" mat-raised-button color="accent" [disabled]="!addform.valid" (click)="addRestaurant()">Add
+          Restaurant</button>
+          <br><br>
+           <!-- <button mat-raised-button color="accent" (click)="update()">Update Restaurant </button> -->
+          </form>
+       </div>
+    </div>
+    
+ </section>

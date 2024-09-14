@@ -1,0 +1,39 @@
+<div class ="page">
+<section id="registration-form" >
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <h2>Register</h2>
+    <mat-form-field appearance="fill">
+      <mat-label>userEmail</mat-label>
+      <input matInput type="userEmail" formControlName="userEmail"   placeholder="userEmail" required>
+      <mat-error *ngIf="userForm.get('userEmail')?.hasError('required')">Email  is required</mat-error>
+      <mat-error *ngIf="userForm.get('userEmail')?.hasError('pattern')">Enter a valid email ID</mat-error>
+    </mat-form-field> 
+    <br>
+    <br>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" placeholder="Password" required>
+      <mat-error *ngIf="userForm.get('password')?.hasError('required')">Password is required</mat-error>
+      <mat-error *ngIf="userForm.get('password')?.hasError('pattern')">
+        Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character, minimum 8 character
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <br>
+    <br>
+    <button mat-raised-button   class="regiBtn" type="submit">Register</button>
+
+    <div class="span">
+      <br><span style="color:rgba(241, 55, 55, 0.918); margin-left: 20px; ">Already Have An Account? <a routerLink="/login"  routerLinkActive="Active">SIGNIN</a> </span>
+      </div>
+    
+
+  </form>
+</section>
+</div>
+
+
+
+
+

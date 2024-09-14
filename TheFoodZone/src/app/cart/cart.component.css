@@ -1,0 +1,48 @@
+.container {
+  font-family: cursive;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px 30px 10px 30px;
+  border-radius: 50px;
+  margin-bottom: 55px;
+  width: 40%;
+  height: 90%;
+  background-color: lightpink;
+  border-radius: 20px;
+  box-shadow: 0 0 5px aqua, 0 0 15px rgb(100, 164, 164), 0 0 50px rgb(100, 156, 156);
+  margin-left: 30%;
+}
+
+.add-item-form {
+  margin-bottom: 10px;
+}
+
+.cart-items {
+  color: black;
+}
+
+.total {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  margin-left: 100px;
+}
+
+button {
+  display: table-cell;
+  max-width: 600px;
+  margin-left: 40%;
+  border: 2px solid purple;
+}
+
+.table {
+  max-width: 100px;
+}
+mat-form-field {
+  width: 300px;
+  height: 85px;
+}
+

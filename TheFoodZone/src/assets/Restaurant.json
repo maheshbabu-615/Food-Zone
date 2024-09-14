@@ -1,0 +1,52 @@
+{
+    "restaurants": [
+        {
+            "restaurantId": "1",
+            "restaurantName": "Paradise",
+            "location": "Hyderabad",
+            "cuisine": "cakes",
+            "restaurantImage": "Paradise",
+            "rating": "4.5",
+            "foods": [
+                {
+                    "foodId": "1",
+                    "foodName": "burgur",
+                    "foodCost": 200,
+                    "foodType": "The fast food",
+                    "foodImage": "burgur"
+                },
+                {
+                    "foodId": "2",
+                    "foodName": "chawmein",
+                    "foodCost": 300,
+                    "foodImage": "chawmein",
+                    "foodType": "fast food"
+                }
+            ]
+        },
+        {
+            "restaurantId": "1",
+            "restaurantName": "sky house",
+            "location": "noida",
+            "cuisine": "biscuts",
+            "restaurantImage": "sky house",
+            "rating": "4.3",
+            "foods": [
+                {
+                    "foodId": "1",
+                    "foodName": "burgur",
+                    "foodCost": 200,
+                    "foodType": "The fast food",
+                    "foodImage": "burgur"
+                },
+                {
+                    "foodId": "2",
+                    "foodName": "chawmein",
+                    "foodCost": 300,
+                    "foodImage": "chawmein",
+                    "foodType": "fast food"
+                }
+            ]
+        }
+    ]
+}

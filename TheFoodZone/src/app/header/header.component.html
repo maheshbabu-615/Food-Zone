@@ -1,0 +1,18 @@
+<div>
+    <div id="header">
+        <div class='top'>
+        <img src="../../assets/HeaderImage/restro-logo.jpg">
+        <h2>Food Zone</h2>
+       <div id="icons">
+        <button class="home" mat-button routerLink="">Home</button>   
+        <button class="login=btn" mat-button *ngIf="authService.isAuthenticatedUser(); else loginLink">
+            <a (click)="logout()">logout</a>
+        </button>
+        <ng-template #loginLink>
+            <button class="login-btn" mat-button routerLink="/login">Login</button>
+        </ng-template>
+        <button class="register" mat-button routerLink="/registration">Register</button> 
+        </div>
+         </div>
+        </div>
+    </div>

@@ -1,0 +1,58 @@
+<div class="container">
+    <h1>Shopping Cart</h1>
+  
+    <!-- Form to add new items to the cart -->
+    <form #cartForm="ngForm" (ngSubmit)="addItem(cartForm)" class="add-item-form">
+      <mat-form-field appearance="fill">
+        <label for="productName">Product Name</label>
+        <input matInput type="text" id="productName" name="productName" ngModel required class="form-control" />
+      </mat-form-field><br>
+
+      <mat-form-field appearance="fill">
+        <label for="quantity">Quantity</label>
+        <input matInput type="number" id="quantity" name="quantity" ngModel required class="form-control" />
+      </mat-form-field><br>
+  
+      <mat-form-field appearance="fill">
+        <label for="price">Price</label>
+        <input matInput type="number" id="price" name="price" ngModel required class="form-control" />
+      </mat-form-field><br>
+  
+      <button  mat-button color="primary"  color="primary">Add to Cart</button>
+    </form>
+  
+    <!-- Display the items in the cart -->
+    <div class="cart-items">
+      <h2>Cart Items</h2>
+      <div *ngIf="cartItems.length === 0" class="alert alert-info">
+       
+      </div>
+      <table *ngIf="cartItems.length > 0" class="table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of cartItems; let i = index">
+            <td>{{ item.productName }}</td>
+            <td>{{ item.price | currency:'INR' }}</td>
+            <td>{{ item.quantity * item.price | currency:'INR'}}</td>
+            <td>
+              <button mat-button color="primary"  color="primary" (click)="removeItem(i)" routerLink="/food-card">remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="total">
+        <h3>Total: {{ getTotal() | currency:'INR' }}</h3>
+      </div>
+      
+    </div>
+  </div>
+
+
+  

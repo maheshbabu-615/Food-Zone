@@ -1,0 +1,28 @@
+img{
+    height:60px;
+    width: 80px;
+
+} 
+#icons{
+    display: flex;
+    margin-left: 1200px;
+    margin-top: -60px;
+       
+}
+#header{
+    background-color: green;
+    background-size: cover;
+    
+}
+ img{
+   height: auto;
+    
+}
+h2{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 70px;
+    margin-top: -40px;
+    margin-bottom: 50px;
+}
+ 

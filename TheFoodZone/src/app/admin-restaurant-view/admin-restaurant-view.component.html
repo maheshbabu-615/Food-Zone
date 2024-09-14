@@ -1,0 +1,29 @@
+<div class="main">
+    <div>
+       
+    <mat-card class="example-card" *ngFor="let restaurant of restaurants">
+        
+            <img mat-card-image src="{{restaurant.image}}" style="margin: 5px;">
+            
+            <h2>
+                <h3>{{restaurant.restaurantId}}</h3>     
+                <h3>{{restaurant.restaurantName}}</h3>
+                <h3>{{restaurant.location}}</h3>
+                <h3>{{restaurant.cuisine}}</h3>
+                <h3>{{restaurant.image}}</h3>
+                <h3>{{restaurant.rating}}</h3>
+                <h3>{{restaurant.address}}</h3>
+                <h3>{{restaurant.address.area}}</h3>
+                <h3>{{restaurant.address.state}}</h3>
+                <h3>{{restaurant.address.zipcode}}</h3>
+            </h2>
+            
+           
+            <button (click)="delete(restaurant.restaurantId)">
+                <mat-icon >delete</mat-icon>
+            </button>
+        </mat-card>
+        <a routerLink="/admin-restaurant-view"></a>
+    </div>
+    </div>
+

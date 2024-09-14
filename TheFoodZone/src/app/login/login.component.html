@@ -1,0 +1,32 @@
+<div class="page" > 
+  <h2 style="font-family: cursive;font-weight: bold;">LOGIN FORM</h2>
+  <div *ngIf="!loggedIn">
+  <form [formGroup]="loginform" (ngSubmit) = "login()">
+    
+              <mat-form-field appearance="fill">
+               <mat-label>userEmail</mat-label>
+                <input matInput type="userEmail" formControlName="userEmail">
+                <mat-error *ngIf="(userEmail)?.hasError('required')">Email should not be empty</mat-error>
+                <mat-error *ngIf="(userEmail)?.hasError('pattern')&&(userEmail)?.dirty">Invalid email address</mat-error>
+               </mat-form-field><br>
+
+              <mat-form-field appearance="fill">
+             <mat-label>Password</mat-label> 
+              <input  matInput type="password" formControlName="password" [type]="hide ? 'password' : 'text'">
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+              <mat-error *ngIf="(password)?.hasError('required')">Password should not be empty</mat-error>
+              <mat-error *ngIf="(password)?.hasError('pattern')">Incorrect password</mat-error>
+              </mat-form-field><br>
+
+               <div class = "btn">
+              <button  mat-raised-button  type="submit" value="LOGIN"  class="sub" mat-dailog-close [disabled]="loginform.invalid" ><span class="signIn">SIGN IN</span></button><br>
+            
+            </div>
+              <div class="span">
+              <br><span  style="color:rgba(241, 55, 55, 0.918); margin-left: 20px; ">Don't Have An Account?  <a routerLink="/registration"  routerLinkActive="Active">SIGNUP</a> </span>
+            </div>
+        </form>
+      </div>
+     

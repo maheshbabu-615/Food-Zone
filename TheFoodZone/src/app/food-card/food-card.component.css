@@ -1,0 +1,32 @@
+.food-item{
+    width: 300px;
+    margin: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: lightpink;
+ 
+    
+  }
+  .food-title{
+    color: black;
+
+  }
+  
+  button{
+    display: table-cell;
+    max-width: 600px;
+    margin-left: 80px;
+    border: 2px solid purple;
+  }
+  
+  .food-image{
+    width: 260px;
+    height: 300px;
+    margin: 20px;
+    
+  }
+ .food-rating{
+  color: black;
+  
+ }

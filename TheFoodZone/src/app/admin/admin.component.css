@@ -1,0 +1,32 @@
+.page{
+ 
+    font-family: cursive;
+    color: red;
+    font-weight:bolder;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-radius: 50px;
+    border-color: white;
+    margin-bottom: 55px;
+    width: 40%;
+    height: 50%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+                box-shadow: 0 0 5px aqua,
+                0 0 15px rgb(100, 164, 164),
+                0 0 50px rgb(100, 156, 156);
+    margin-left: 30%
+}
+    
+  .background{
+    height:100%;
+    width:100%;
+    position: absolute;
+    background-color:orange;
+  }
+ 
+ 
+  
